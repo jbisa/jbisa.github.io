@@ -1,0 +1,11 @@
+.jumbotron {
+  //background: url('../images/me3.png') no-repeat center center;
+  //height: 400px;
+  background-color: #1790aa;
+  color: white;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
