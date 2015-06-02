@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">    
 
     <!-- Custom css -->
-    <link rel="stylesheet" href="css/wovfn.css">
+    <link rel="stylesheet" href="css/wovfn.css">   
 
     <title>wovfn.com</title>
   </head>
-  <body>
+  <body ng-app="wovfnApp">
     <!-- Navigation -->
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -35,8 +35,8 @@
     </div>
   
     <!-- Page content -->
-    <div class="container">
-      <p>Currently under construction...</p>
+    <div ng-controller="WOVFNCtrl" class="container">
+      <p>{{message}}</p>
     </div>
 
   </body>
@@ -45,4 +45,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- AngularJS -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular-animate.js"></script>
+
+  <script type="text/javascript" src="javascript/controllers/wovfnCtrl.js"></script>
+
 </html>
