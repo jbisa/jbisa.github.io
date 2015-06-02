@@ -9,3 +9,8 @@
   margin-bottom: 0px;
   border-radius: 0px;
 }
+
+.content-center {
+  text-align: center;
+  padding-bottom: 20px;
+}
