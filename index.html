@@ -17,13 +17,15 @@
       <!-- Navigation -->
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
+	  <!--
 	   <div class="navbar-header">
 	     <a class="navbar-brand" href="#/portfolio">wovfn.com</a>
-	   </div>
+	   </div>-->
            <div>
 	     <ul class="nav navbar-nav">
-              <li><a href="#/about">About</a></li>
-              <li class="active"><a href="#/portfolio">Portfolio</a></li>
+	      <li class="active"><a href="#/">About</a></li>
+              <li><a href="#/portfolio">Portfolio</a></li>
+	      <li><a href="#/reviews">Music Reviews</a></li>
               <li><a href="#/contact">Contact</a></li>
 	     </ul>
            </div>
@@ -34,18 +36,21 @@
     <!-- Dynamic content goes here -->
     <div ng-view></div>
 
+    <!-- Footer -->
+    <div class="center-text"><p>footer...<p></div>
+
   </body>
 
   <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   
   <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
   <!-- AngularJS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
-  <script src="js/controllers/wovfnCtrl.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+  <script type="text/javascript" src="js/controllers/wovfnCtrl.js"></script>
 
 </html>
