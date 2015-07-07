@@ -1,8 +1,16 @@
 .jumbotron {
   //background: url('../images/me3.png') no-repeat center center;
-  //height: 400px;
-  background-color: #1790aa;
+  height: 500px;
+  //background-color: #1790aa;
+  background-color: black;
   color: white;
+  border-radius: 0px !important;
+}
+
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  max-height: 100%;
 }
 
 .navbar {
@@ -10,7 +18,11 @@
   border-radius: 0px;
 }
 
-.content-center {
+.center-content {
   text-align: center;
   padding-bottom: 20px;
+}
+
+.center-text {
+  text-align: center;
 }
