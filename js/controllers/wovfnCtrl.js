@@ -8,14 +8,22 @@ var myApp = angular.module('wovfnApp', ['ngResource', 'ngRoute']);
  */
 myApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
+      
       // About
       .when("/", {templateUrl: "content/about.html", controller: "WovfnCtrl"})
+     
       // Portfolio
       .when("/portfolio", {templateUrl: "content/portfolio.html", controller: "WovfnCtrl"})
+      
       // Music Reviews
-      .when("/reviews", {templateUrl: "content/reviews.html", controller: "WovfnCtrl"})
+      //.when("/reviews", {templateUrl: "content/reviews.html", controller: "WovfnCtrl"})
+      
+      // Resume
+      .when("/resume", {templateUrl: "content/resume.html", controller: "WovfnCtrl"})
+      
       // Contact
       .when("/contact", {templateUrl: "content/contact.html", controller: "WovfnCtrl"})
+      
       // 404
       .otherwise("/404", {templateUrl: "content/404.html", controller: "WovfnCtrl"})
 }]);
