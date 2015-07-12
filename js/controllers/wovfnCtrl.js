@@ -34,5 +34,17 @@ myApp.config(['$routeProvider', function($routeProvider) {
  */
 myApp.controller('WovfnCtrl', ['$scope', function($scope) {
   console.log("Switching pages...");
+  
+  $scope.navLocations = [{ id: 1, name: "About", link: "#/"},
+			 { id: 2, name: "Portfolio", link: "#/portfolio"},
+			 { id: 3, name: "Resume", link: "#/resume"},
+			 { id: 4, name: "Contact", link: "#/contact"}];
+
+  // Start off on About page
+  $scope.idActiveLocation = 1;
+  
+  $scope.setSelected = function(idSelectedLocation) {
+      $scope.idActiveLocation = idSelectedLocation;
+  }
 
 }]);

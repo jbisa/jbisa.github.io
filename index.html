@@ -17,17 +17,11 @@
       <!-- Navigation -->
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-	  <!--
-	   <div class="navbar-header">
-	     <a class="navbar-brand" href="#/portfolio">wovfn.com</a>
-	   </div>-->
-           <div>
+	  <div>
 	     <ul class="nav navbar-nav">
-	      <li class="active"><a href="#/">About</a></li>
-              <li><a href="#/portfolio">Portfolio</a></li>
-	      <!--<li><a href="#/reviews">Music Reviews</a></li>-->
-	      <li><a href="#/resume">Resume</a></li>
-              <li><a href="#/contact">Contact</a></li>
+	       <li ng-repeat="navLocation in navLocations" ng-click="setSelected(navLocation.id)" ng-class="{active: navLocation.id === idActiveLocation}">
+		 <a href="{{navLocation.link}}">{{navLocation.name}}</a>
+	       </li>
 	     </ul>
            </div>
         </div>
