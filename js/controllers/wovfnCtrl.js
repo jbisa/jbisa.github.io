@@ -34,6 +34,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
  */
 myApp.controller('WovfnCtrl', ['$scope', '$location', function($scope, $location) {
   console.log("Switching pages...");
+  console.log("location.path(): " + $location.path());
   
   $scope.navLocations = [{ id: 1, name: "About", link: "#/", path: "/"},
 			 { id: 2, name: "Portfolio", link: "#/portfolio", path: "/portfolio"},
