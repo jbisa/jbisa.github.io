@@ -36,10 +36,10 @@ myApp.controller('WovfnCtrl', ['$scope', '$location', function($scope, $location
   console.log("Switching pages...");
   console.log("location.path(): " + $location.path());
   
-  $scope.navLocations = [{ id: 1, name: "About", link: "#/", path: "/"},
-			 { id: 2, name: "Portfolio", link: "#/portfolio", path: "/portfolio"},
-			 { id: 3, name: "Resume", link: "#/resume", path: "/resume"},
-			 { id: 4, name: "Contact", link: "#/contact", path: "/contact"}];
+  $scope.navLocations = [{ id: "about", name: "About", link: "#/", path: "/"},
+			 { id: "portfolio", name: "Portfolio", link: "#/portfolio", path: "/portfolio"},
+			 { id: "resume", name: "Resume", link: "#/resume", path: "/resume"},
+			 { id: "contact", name: "Contact", link: "#/contact", path: "/contact"}];
 
   $scope.activeLocation = $location.path();
   
@@ -54,7 +54,22 @@ myApp.controller('WovfnCtrl', ['$scope', '$location', function($scope, $location
   }
   
   $scope.setSelected = function(selectedLocation) {
-      $scope.activeLocation = selectedLocation;
+      //console.log("selectedLocation: " + selectedLocation);
+      //$scope.activeLocation = selectedLocation;
+      $("li").removeClass("active");
+      if (selectedLocation === "about") {
+	  $scope.activeLocation = "/";
+      } else {
+	  $scope.activeLocation = "/"+selectedLocation;
+      }
+      $("#"+selectedLocation).addClass("active");
+ 
+  }
+
+  $scope.setSelectedFromLink = function(selectedLocation) {
+      $("li").removeClass('active');
+      $scope.activeLocation = "/"+selectedLocation;
+      $('#'+selectedLocation).addClass('active');
   }
 
 }]);

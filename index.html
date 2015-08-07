@@ -19,7 +19,7 @@
         <div class="container-fluid">
 	  <div>
 	     <ul class="nav navbar-nav">
-	       <li ng-repeat="navLocation in navLocations" ng-click="setSelected(navLocation.path)" ng-class="{active: navLocation.path === activeLocation}">
+	       <li ng-repeat="navLocation in navLocations" id="{{navLocation.id}}" ng-click="setSelected(navLocation.id)" ng-class="{active: navLocation.path === activeLocation}">
 		 <a href="{{navLocation.link}}">{{navLocation.name}}</a>
 	       </li>
 	     </ul>
