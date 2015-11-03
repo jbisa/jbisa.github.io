@@ -22,7 +22,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
       .when("/resume", {templateUrl: "content/resume.html", controller: "WovfnCtrl"})
       
       // Contact
-      .when("/contact", {templateUrl: "content/contact.html", controller: "WovfnCtrl"})
+      //.when("/contact", {templateUrl: "content/contact.html", controller: "WovfnCtrl"})
       
       // 404
       .otherwise("/404", {templateUrl: "content/404.html", controller: "WovfnCtrl"})
@@ -38,8 +38,8 @@ myApp.controller('WovfnCtrl', ['$scope', '$location', function($scope, $location
   
   $scope.navLocations = [{ id: "about", name: "About", link: "#/", path: "/"},
 			 { id: "portfolio", name: "Portfolio", link: "#/portfolio", path: "/portfolio"},
-			 { id: "resume", name: "Resume", link: "#/resume", path: "/resume"},
-			 { id: "contact", name: "Contact", link: "#/contact", path: "/contact"}];
+			 { id: "resume", name: "Resume", link: "#/resume", path: "/resume"}];//,
+  //{ id: "contact", name: "Contact", link: "#/contact", path: "/contact"}];
 
   $scope.activeLocation = $location.path();
   
