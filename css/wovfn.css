@@ -26,3 +26,7 @@ img {
 .center-text {
   text-align: center;
 }
+
+p {
+  margin: 20px 200px 20px;
+}
