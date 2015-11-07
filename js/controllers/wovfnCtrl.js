@@ -12,8 +12,15 @@ myApp.config(['$routeProvider', function($routeProvider) {
       // About
       .when("/", {templateUrl: "content/about.html", controller: "WovfnCtrl"})
      
+      // Music
+      .when("/music", {templateUrl: "content/music.html", controller: "WovfnCtrl"})
+
+      .when("/photography", {templateUrl: "content/photography.html", controller: "WovfnCtrl"})
+
+      .when("/devwork", {templateUrl: "content/devwork.html", controller: "WovfnCtrl"})
+
       // Portfolio
-      .when("/portfolio", {templateUrl: "content/portfolio.html", controller: "WovfnCtrl"})
+      //.when("/portfolio", {templateUrl: "content/portfolio.html", controller: "WovfnCtrl"})
       
       // Music Reviews
       //.when("/reviews", {templateUrl: "content/reviews.html", controller: "WovfnCtrl"})
@@ -37,7 +44,9 @@ myApp.controller('WovfnCtrl', ['$scope', '$location', function($scope, $location
   console.log("location.path(): " + $location.path());
   
   $scope.navLocations = [{ id: "about", name: "About", link: "#/", path: "/"},
-			 { id: "portfolio", name: "Portfolio", link: "#/portfolio", path: "/portfolio"},
+			 { id: "music", name: "Music", link: "#/music", path: "/music"},
+			 { id: "photography", name: "Photography", link: "#/photography", path: "/photography"},
+			 { id: "devwork", name: "Dev Work", link: "#/devwork", path: "/devwork"},
 			 { id: "resume", name: "Resume", link: "#/resume", path: "/resume"}];//,
   //{ id: "contact", name: "Contact", link: "#/contact", path: "/contact"}];
 
