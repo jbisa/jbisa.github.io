@@ -7,6 +7,14 @@
   border-radius: 0px !important;
 }
 
+#pats-gif {
+  background: url('http://pixel.nymag.com/imgs/daily/intelligencer/2015/02/01/super-bowl-gifs/malcolm-butler-pick.nocrop.w529.h\
+316.gif') no-repeat center center;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+}
+
 .container-body {
   padding-top: 20px;
 }
