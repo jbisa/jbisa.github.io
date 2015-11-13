@@ -1,3 +1,7 @@
+body {
+  background-color: #f5f8fa;
+}
+
 .jumbotron {
   //background: url('../images/me3.png') no-repeat center center;
   height: 500px;
