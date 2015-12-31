@@ -84,6 +84,11 @@ img {
   text-align: center;
 }
 
+.center-list { 
+  text-align: center; 
+  list-style-position:inside;
+}
+
 p {
   margin: 20px 200px 20px;
 }
